@@ -28,7 +28,7 @@ jobs:
         env:
           jvmType: ${{ matrix.jvmType }}
           version: ${{ matrix.version }}
-          expectedGroovyVersion: 4.0.0-alpha-1
+          expectedGroovyVersion: 4.0.0-alpha-2
         run: |
           cd test
           ./run.sh "groovy:${jvmType}${version}" "${expectedGroovyVersion}"
